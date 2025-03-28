@@ -1,0 +1,585 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OutSystems.NssSQLCMD</name>
+    </assembly>
+    <members>
+        <member name="M:OutSystems.NssSQLCMD.CssSQLCMD.MssGetStatementType(System.String,OutSystems.NssSQLCMD.RLTypeRecordList@)">
+            <summary>
+            
+            </summary>
+            <param name="ssSQL">SQL Statement(s)</param>
+            <param name="ssTypeList">Statement Type</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.IssSQLCMD.MssExecute(System.String,System.Int64,System.String,System.String,System.Boolean,OutSystems.NssSQLCMD.RLColumnRecordList@,OutSystems.NssSQLCMD.RLRowRecordList@,System.Int64@,System.Int64@,System.Boolean,System.String@,System.Boolean,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="ssSQL"></param>
+            <param name="ssMaxRecords"></param>
+            <param name="ssCatalogName"></param>
+            <param name="ssConnectionName"></param>
+            <param name="ssRollbackTransaction"></param>
+            <param name="ssColumns"></param>
+            <param name="ssRows"></param>
+            <param name="ssCount"></param>
+            <param name="ssAffectedRows"></param>
+            <param name="ssIncludeMessage"></param>
+            <param name="ssMessage"></param>
+            <param name="ssShowXML"></param>
+            <param name="ssXMLSQLPlan"></param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.IssSQLCMD.MssIsProduction(System.Boolean@)">
+            <summary>
+            
+            </summary>
+            <param name="ssIsProduction"></param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.IssSQLCMD.MssStartTimer(System.Object@)">
+            <summary>
+            
+            </summary>
+            <param name="ssTimer"></param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.IssSQLCMD.MssStopTimer(System.Object,System.Int64@)">
+            <summary>
+            
+            </summary>
+            <param name="ssTimer"></param>
+            <param name="ssMilliseconds"></param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.IssSQLCMD.MssParseContextualQuery(System.String,OutSystems.NssSQLCMD.RLEntityDetailsRecordList,System.String@,System.Boolean@,System.String@,System.Boolean@,OutSystems.NssSQLCMD.RLEntityAttributeDetailsRecordList@)">
+            <summary>
+            
+            </summary>
+            <param name="ssContextualSQL"></param>
+            <param name="ssContext"></param>
+            <param name="ssSQL"></param>
+            <param name="ssHasInferredConnectionName"></param>
+            <param name="ssInferredConnectionName"></param>
+            <param name="ssHasInferredOutput"></param>
+            <param name="ssInferredOutput"></param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.IssSQLCMD.MssGetStatementType(System.String,OutSystems.NssSQLCMD.RLTypeRecordList@)">
+            <summary>
+            
+            </summary>
+            <param name="ssSQL">SQL Statement(s)</param>
+            <param name="ssTypeList">Statement Type</param>
+        </member>
+        <member name="T:OutSystems.NssSQLCMD.STColumnStructure">
+            <summary>
+            Structure <code>STColumnStructure</code> that represents the Service Studio structure
+             <code>Column</code> <p> Description: </p>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.STColumnStructure.Read(System.Data.IDataReader,System.Int32@)">
+            <summary>
+            Read a record from database
+            </summary>
+            <param name="r"> Data base reader</param>
+            <param name="index"> index</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.STColumnStructure.ReadDB(System.Data.IDataReader)">
+            <summary>
+            Read from database
+            </summary>
+            <param name="r"> Data reader</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.STColumnStructure.ReadIM(OutSystems.NssSQLCMD.STColumnStructure)">
+            <summary>
+            Read from record
+            </summary>
+            <param name="r"> Record</param>
+        </member>
+        <member name="T:OutSystems.NssSQLCMD.STRowStructure">
+            <summary>
+            Structure <code>STRowStructure</code> that represents the Service Studio structure <code>Row</code>
+             <p> Description: </p>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.STRowStructure.Read(System.Data.IDataReader,System.Int32@)">
+            <summary>
+            Read a record from database
+            </summary>
+            <param name="r"> Data base reader</param>
+            <param name="index"> index</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.STRowStructure.ReadDB(System.Data.IDataReader)">
+            <summary>
+            Read from database
+            </summary>
+            <param name="r"> Data reader</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.STRowStructure.ReadIM(OutSystems.NssSQLCMD.STRowStructure)">
+            <summary>
+            Read from record
+            </summary>
+            <param name="r"> Record</param>
+        </member>
+        <member name="T:OutSystems.NssSQLCMD.STRowValueStructure">
+            <summary>
+            Structure <code>STRowValueStructure</code> that represents the Service Studio structure
+             <code>RowValue</code> <p> Description: </p>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.STRowValueStructure.Read(System.Data.IDataReader,System.Int32@)">
+            <summary>
+            Read a record from database
+            </summary>
+            <param name="r"> Data base reader</param>
+            <param name="index"> index</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.STRowValueStructure.ReadDB(System.Data.IDataReader)">
+            <summary>
+            Read from database
+            </summary>
+            <param name="r"> Data reader</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.STRowValueStructure.ReadIM(OutSystems.NssSQLCMD.STRowValueStructure)">
+            <summary>
+            Read from record
+            </summary>
+            <param name="r"> Record</param>
+        </member>
+        <member name="T:OutSystems.NssSQLCMD.STEntityDetailsStructure">
+            <summary>
+            Structure <code>STEntityDetailsStructure</code> that represents the Service Studio structure
+             <code>EntityDetails</code> <p> Description: </p>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.STEntityDetailsStructure.Read(System.Data.IDataReader,System.Int32@)">
+            <summary>
+            Read a record from database
+            </summary>
+            <param name="r"> Data base reader</param>
+            <param name="index"> index</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.STEntityDetailsStructure.ReadDB(System.Data.IDataReader)">
+            <summary>
+            Read from database
+            </summary>
+            <param name="r"> Data reader</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.STEntityDetailsStructure.ReadIM(OutSystems.NssSQLCMD.STEntityDetailsStructure)">
+            <summary>
+            Read from record
+            </summary>
+            <param name="r"> Record</param>
+        </member>
+        <member name="T:OutSystems.NssSQLCMD.STEntityAttributeDetailsStructure">
+            <summary>
+            Structure <code>STEntityAttributeDetailsStructure</code> that represents the Service Studio
+             structure <code>EntityAttributeDetails</code> <p> Description: </p>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.STEntityAttributeDetailsStructure.Read(System.Data.IDataReader,System.Int32@)">
+            <summary>
+            Read a record from database
+            </summary>
+            <param name="r"> Data base reader</param>
+            <param name="index"> index</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.STEntityAttributeDetailsStructure.ReadDB(System.Data.IDataReader)">
+            <summary>
+            Read from database
+            </summary>
+            <param name="r"> Data reader</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.STEntityAttributeDetailsStructure.ReadIM(OutSystems.NssSQLCMD.STEntityAttributeDetailsStructure)">
+            <summary>
+            Read from record
+            </summary>
+            <param name="r"> Record</param>
+        </member>
+        <member name="T:OutSystems.NssSQLCMD.STTypeStructure">
+            <summary>
+            Structure <code>STTypeStructure</code> that represents the Service Studio structure
+             <code>Type</code> <p> Description: </p>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.STTypeStructure.Read(System.Data.IDataReader,System.Int32@)">
+            <summary>
+            Read a record from database
+            </summary>
+            <param name="r"> Data base reader</param>
+            <param name="index"> index</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.STTypeStructure.ReadDB(System.Data.IDataReader)">
+            <summary>
+            Read from database
+            </summary>
+            <param name="r"> Data reader</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.STTypeStructure.ReadIM(OutSystems.NssSQLCMD.STTypeStructure)">
+            <summary>
+            Read from record
+            </summary>
+            <param name="r"> Record</param>
+        </member>
+        <member name="T:OutSystems.NssSQLCMD.RCColumnRecord">
+            <summary>
+            Structure <code>RCColumnRecord</code>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RCColumnRecord.Read(System.Data.IDataReader,System.Int32@)">
+            <summary>
+            Read a record from database
+            </summary>
+            <param name="r"> Data base reader</param>
+            <param name="index"> index</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RCColumnRecord.ReadDB(System.Data.IDataReader)">
+            <summary>
+            Read from database
+            </summary>
+            <param name="r"> Data reader</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RCColumnRecord.ReadIM(OutSystems.NssSQLCMD.RCColumnRecord)">
+            <summary>
+            Read from record
+            </summary>
+            <param name="r"> Record</param>
+        </member>
+        <member name="T:OutSystems.NssSQLCMD.RCRowRecord">
+            <summary>
+            Structure <code>RCRowRecord</code>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RCRowRecord.Read(System.Data.IDataReader,System.Int32@)">
+            <summary>
+            Read a record from database
+            </summary>
+            <param name="r"> Data base reader</param>
+            <param name="index"> index</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RCRowRecord.ReadDB(System.Data.IDataReader)">
+            <summary>
+            Read from database
+            </summary>
+            <param name="r"> Data reader</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RCRowRecord.ReadIM(OutSystems.NssSQLCMD.RCRowRecord)">
+            <summary>
+            Read from record
+            </summary>
+            <param name="r"> Record</param>
+        </member>
+        <member name="T:OutSystems.NssSQLCMD.RCRowValueRecord">
+            <summary>
+            Structure <code>RCRowValueRecord</code>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RCRowValueRecord.Read(System.Data.IDataReader,System.Int32@)">
+            <summary>
+            Read a record from database
+            </summary>
+            <param name="r"> Data base reader</param>
+            <param name="index"> index</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RCRowValueRecord.ReadDB(System.Data.IDataReader)">
+            <summary>
+            Read from database
+            </summary>
+            <param name="r"> Data reader</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RCRowValueRecord.ReadIM(OutSystems.NssSQLCMD.RCRowValueRecord)">
+            <summary>
+            Read from record
+            </summary>
+            <param name="r"> Record</param>
+        </member>
+        <member name="T:OutSystems.NssSQLCMD.RCEntityDetailsRecord">
+            <summary>
+            Structure <code>RCEntityDetailsRecord</code>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RCEntityDetailsRecord.Read(System.Data.IDataReader,System.Int32@)">
+            <summary>
+            Read a record from database
+            </summary>
+            <param name="r"> Data base reader</param>
+            <param name="index"> index</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RCEntityDetailsRecord.ReadDB(System.Data.IDataReader)">
+            <summary>
+            Read from database
+            </summary>
+            <param name="r"> Data reader</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RCEntityDetailsRecord.ReadIM(OutSystems.NssSQLCMD.RCEntityDetailsRecord)">
+            <summary>
+            Read from record
+            </summary>
+            <param name="r"> Record</param>
+        </member>
+        <member name="T:OutSystems.NssSQLCMD.RCEntityAttributeDetailsRecord">
+            <summary>
+            Structure <code>RCEntityAttributeDetailsRecord</code>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RCEntityAttributeDetailsRecord.Read(System.Data.IDataReader,System.Int32@)">
+            <summary>
+            Read a record from database
+            </summary>
+            <param name="r"> Data base reader</param>
+            <param name="index"> index</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RCEntityAttributeDetailsRecord.ReadDB(System.Data.IDataReader)">
+            <summary>
+            Read from database
+            </summary>
+            <param name="r"> Data reader</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RCEntityAttributeDetailsRecord.ReadIM(OutSystems.NssSQLCMD.RCEntityAttributeDetailsRecord)">
+            <summary>
+            Read from record
+            </summary>
+            <param name="r"> Record</param>
+        </member>
+        <member name="T:OutSystems.NssSQLCMD.RCTypeRecord">
+            <summary>
+            Structure <code>RCTypeRecord</code>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RCTypeRecord.Read(System.Data.IDataReader,System.Int32@)">
+            <summary>
+            Read a record from database
+            </summary>
+            <param name="r"> Data base reader</param>
+            <param name="index"> index</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RCTypeRecord.ReadDB(System.Data.IDataReader)">
+            <summary>
+            Read from database
+            </summary>
+            <param name="r"> Data reader</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RCTypeRecord.ReadIM(OutSystems.NssSQLCMD.RCTypeRecord)">
+            <summary>
+            Read from record
+            </summary>
+            <param name="r"> Record</param>
+        </member>
+        <member name="T:OutSystems.NssSQLCMD.RLColumnRecordList">
+            <summary>
+            RecordList type <code>RLColumnRecordList</code> that represents a record list of
+             <code>Column</code>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLColumnRecordList.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLColumnRecordList.#ctor(System.Data.IDbTransaction)">
+            <summary>
+            Constructor with transaction parameter
+            </summary>
+            <param name="trans"> IDbTransaction Parameter</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLColumnRecordList.#ctor(System.Data.IDbTransaction,OutSystems.HubEdition.RuntimePlatform.Db.OSList{OutSystems.NssSQLCMD.RCColumnRecord}.ReadDBMethodDelegate)">
+            <summary>
+            Constructor with transaction parameter and alternate read method
+            </summary>
+            <param name="trans"> IDbTransaction Parameter</param>
+            <param name="alternateReadDBMethod"> Alternate Read Method</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLColumnRecordList.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor declaration for serialization
+            </summary>
+            <param name="info"> SerializationInfo</param>
+            <param name="context"> StreamingContext</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLColumnRecordList.NewList">
+            <summary>
+            Create as new list
+            </summary>
+            <returns>The new record list</returns>
+        </member>
+        <member name="T:OutSystems.NssSQLCMD.RLRowRecordList">
+            <summary>
+            RecordList type <code>RLRowRecordList</code> that represents a record list of <code>Row</code>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLRowRecordList.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLRowRecordList.#ctor(System.Data.IDbTransaction)">
+            <summary>
+            Constructor with transaction parameter
+            </summary>
+            <param name="trans"> IDbTransaction Parameter</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLRowRecordList.#ctor(System.Data.IDbTransaction,OutSystems.HubEdition.RuntimePlatform.Db.OSList{OutSystems.NssSQLCMD.RCRowRecord}.ReadDBMethodDelegate)">
+            <summary>
+            Constructor with transaction parameter and alternate read method
+            </summary>
+            <param name="trans"> IDbTransaction Parameter</param>
+            <param name="alternateReadDBMethod"> Alternate Read Method</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLRowRecordList.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor declaration for serialization
+            </summary>
+            <param name="info"> SerializationInfo</param>
+            <param name="context"> StreamingContext</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLRowRecordList.NewList">
+            <summary>
+            Create as new list
+            </summary>
+            <returns>The new record list</returns>
+        </member>
+        <member name="T:OutSystems.NssSQLCMD.RLRowValueRecordList">
+            <summary>
+            RecordList type <code>RLRowValueRecordList</code> that represents a record list of
+             <code>RowValue</code>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLRowValueRecordList.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLRowValueRecordList.#ctor(System.Data.IDbTransaction)">
+            <summary>
+            Constructor with transaction parameter
+            </summary>
+            <param name="trans"> IDbTransaction Parameter</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLRowValueRecordList.#ctor(System.Data.IDbTransaction,OutSystems.HubEdition.RuntimePlatform.Db.OSList{OutSystems.NssSQLCMD.RCRowValueRecord}.ReadDBMethodDelegate)">
+            <summary>
+            Constructor with transaction parameter and alternate read method
+            </summary>
+            <param name="trans"> IDbTransaction Parameter</param>
+            <param name="alternateReadDBMethod"> Alternate Read Method</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLRowValueRecordList.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor declaration for serialization
+            </summary>
+            <param name="info"> SerializationInfo</param>
+            <param name="context"> StreamingContext</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLRowValueRecordList.NewList">
+            <summary>
+            Create as new list
+            </summary>
+            <returns>The new record list</returns>
+        </member>
+        <member name="T:OutSystems.NssSQLCMD.RLEntityDetailsRecordList">
+            <summary>
+            RecordList type <code>RLEntityDetailsRecordList</code> that represents a record list of
+             <code>EntityDetails</code>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLEntityDetailsRecordList.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLEntityDetailsRecordList.#ctor(System.Data.IDbTransaction)">
+            <summary>
+            Constructor with transaction parameter
+            </summary>
+            <param name="trans"> IDbTransaction Parameter</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLEntityDetailsRecordList.#ctor(System.Data.IDbTransaction,OutSystems.HubEdition.RuntimePlatform.Db.OSList{OutSystems.NssSQLCMD.RCEntityDetailsRecord}.ReadDBMethodDelegate)">
+            <summary>
+            Constructor with transaction parameter and alternate read method
+            </summary>
+            <param name="trans"> IDbTransaction Parameter</param>
+            <param name="alternateReadDBMethod"> Alternate Read Method</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLEntityDetailsRecordList.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor declaration for serialization
+            </summary>
+            <param name="info"> SerializationInfo</param>
+            <param name="context"> StreamingContext</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLEntityDetailsRecordList.NewList">
+            <summary>
+            Create as new list
+            </summary>
+            <returns>The new record list</returns>
+        </member>
+        <member name="T:OutSystems.NssSQLCMD.RLEntityAttributeDetailsRecordList">
+            <summary>
+            RecordList type <code>RLEntityAttributeDetailsRecordList</code> that represents a record list of
+             <code>EntityAttributeDetails</code>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLEntityAttributeDetailsRecordList.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLEntityAttributeDetailsRecordList.#ctor(System.Data.IDbTransaction)">
+            <summary>
+            Constructor with transaction parameter
+            </summary>
+            <param name="trans"> IDbTransaction Parameter</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLEntityAttributeDetailsRecordList.#ctor(System.Data.IDbTransaction,OutSystems.HubEdition.RuntimePlatform.Db.OSList{OutSystems.NssSQLCMD.RCEntityAttributeDetailsRecord}.ReadDBMethodDelegate)">
+            <summary>
+            Constructor with transaction parameter and alternate read method
+            </summary>
+            <param name="trans"> IDbTransaction Parameter</param>
+            <param name="alternateReadDBMethod"> Alternate Read Method</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLEntityAttributeDetailsRecordList.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor declaration for serialization
+            </summary>
+            <param name="info"> SerializationInfo</param>
+            <param name="context"> StreamingContext</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLEntityAttributeDetailsRecordList.NewList">
+            <summary>
+            Create as new list
+            </summary>
+            <returns>The new record list</returns>
+        </member>
+        <member name="T:OutSystems.NssSQLCMD.RLTypeRecordList">
+            <summary>
+            RecordList type <code>RLTypeRecordList</code> that represents a record list of <code>Type</code>
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLTypeRecordList.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLTypeRecordList.#ctor(System.Data.IDbTransaction)">
+            <summary>
+            Constructor with transaction parameter
+            </summary>
+            <param name="trans"> IDbTransaction Parameter</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLTypeRecordList.#ctor(System.Data.IDbTransaction,OutSystems.HubEdition.RuntimePlatform.Db.OSList{OutSystems.NssSQLCMD.RCTypeRecord}.ReadDBMethodDelegate)">
+            <summary>
+            Constructor with transaction parameter and alternate read method
+            </summary>
+            <param name="trans"> IDbTransaction Parameter</param>
+            <param name="alternateReadDBMethod"> Alternate Read Method</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLTypeRecordList.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Constructor declaration for serialization
+            </summary>
+            <param name="info"> SerializationInfo</param>
+            <param name="context"> StreamingContext</param>
+        </member>
+        <member name="M:OutSystems.NssSQLCMD.RLTypeRecordList.NewList">
+            <summary>
+            Create as new list
+            </summary>
+            <returns>The new record list</returns>
+        </member>
+    </members>
+</doc>
